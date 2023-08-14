@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { API_URL } from './apiURL';
+import  API_URL  from './apiURL';
 import RandomMeme from './components/RandomMeme';
 
 
@@ -16,7 +16,7 @@ function App() {
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }
-        
+
         const memesData = await response.json();
         const memesArray = memesData.data.memes;
         
